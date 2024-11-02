@@ -1,0 +1,1 @@
+O arquivo.py contém uma função que recebe um dado do tipo String e verifica se este dado ja esta salvo na variavel dicionario. Caso ja esteja constando, retorna uma mensagem, caso não, a função salva a palavra no dicionário e em reguida imprime o conteudo do dicionario. Utilize um IDE online ou de sua preferência.

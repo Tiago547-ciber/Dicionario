@@ -16,7 +16,8 @@ def verificar():
     a = input("Digite uma palavra.")
     if a not in dicionario:
       dicionario[a] = True
-      print(dicionario)
+      print("Não entendi. Poderia perguntar novamente?")
+      
     elif a in dicionario:
       print(dicionario[a]
     else:

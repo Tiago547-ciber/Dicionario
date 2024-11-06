@@ -7,16 +7,17 @@ with open("formatted.json", "r") as arquivo:
 
 def verificar():
   for i in range(5000):
-    a = input("Digite uma palavra.")
+    print("Olá. Digite o número do seu pedido de compra, para saber o status de entrega.")
+    a = input()
     if a not in dicionario:
-      dicionario[a] = True
-      print("Não entendi. Poderia perguntar novamente?")
+      print("O número do pedido esta incorreto ou não existe.")
     elif a in dicionario:
       print(dicionario[a])
     else:
-      print("a palavra ja existe.")
+      print("Erro.")
     with open("formatted.json", "w") as arquivo:
         json.dump(dicionario, arquivo, indent=4)
 
 
 verificar()
+

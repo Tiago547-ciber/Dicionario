@@ -1,8 +1,7 @@
 
-# Online Python - IDE, Editor, Compiler, Interpreter
 
 import json
-with open("formatted.json", "r") as arquivo:
+with open("pedidos.json", "r") as arquivo:
     dicionario = json.load(arquivo)
 
 def verificar():
@@ -12,7 +11,8 @@ def verificar():
     if a not in dicionario:
       print("O número do pedido esta incorreto ou não existe.")
     elif a in dicionario:
-      print(dicionario[a])
+      print(dicionario[a][2])
+
     else:
       print("Erro.")
     with open("formatted.json", "w") as arquivo:
@@ -20,4 +20,3 @@ def verificar():
 
 
 verificar()
-
